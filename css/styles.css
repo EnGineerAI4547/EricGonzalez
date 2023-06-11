@@ -30,4 +30,9 @@ a {
   font-size: 24px;
   font-weight: bold;
 }
+.qr-code {
+  width: 150px; 
+  border: 1px solid #333; 
+  padding: 10px;
+}
 
