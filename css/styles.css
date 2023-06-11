@@ -1,41 +1,143 @@
-body {
-  padding-top: 20px;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+$darkest-blue: #1a237e;
+$darker-blue: #283593;
+$dark-blue: #303f9f;
+$medium-blue: #3949ab;
+$light-blue: #3f51b5;
+$lighter-blue: #5c6bc0;
+$lightest-blue: #9fa8da;
+$white: #ffffff;
+$black: #0e1442;
+$red: #FF0000; // Changed from $orange: #ffb300; and $yellow: #fdd835;
+$dark-pink: #ad1457;
+$light-pink: #d81b60;
+
+// The rest of your CSS code goes here, with each instance of $orange replaced with $red and each instance of $yellow replaced with $red
+
+
+@charset "UTF-8";
+* {
+  outline: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: $white;
+  cursor: default;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 
 a {
-  color: #007bff;
-}
-
-.navbar {
-  margin-bottom: 20px;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.nav-link {
-  font-size: 18px;
-}
-
-.navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-}
-.qr-code {
+  text-decoration: none;
+  color: $white;
   display: block;
-  margin: 0 auto;
-  width: 600px; 
-  border: 1px solid #333; 
-  padding: 10px;
+  transition-duration: 0.3s;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h2 {
+}
+
+h3 {
+  color: $red; //changed from $orange
+  margin: 10px 0;
+  text-transform: lowercase;
+  font-size: 1.25em;
+}
+
+// other styling code here...
+
+.resume .base .contact div a:hover {
+  color: $red; //changed from $yellow
+}
+
+.resume .base .contact div a:hover span::after {
+  width: 100%;
+}
+
+.resume .base .contact div:hover i {
+  color: $red; //changed from $yellow
+}
+
+.resume .base .contact div i {
+  color: $red; //changed from $orange
+  // other styling code...
+}
+
+.resume .base .contact div span::after {
+  content: "";
+  position: absolute;
+  background: $red; //changed from $yellow
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.3s;
+}
+
+.resume .base .follow .box a:hover i {
+  background: $red; //changed from $yellow
+  // other styling code...
+}
+
+.resume .func .work ul li:hover::before,
+.resume .func .edu ul li:hover::before {
+  animation: circle 1.2s infinite;
+}
+
+.resume .func .work ul li:hover span,
+.resume .func .edu ul li:hover span {
+  color: $red; //changed from $yellow
+}
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px $red; //changed from $yellow
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+
+// other styling code here...
+
+.resume .func .skills-prog ul li:hover {
+  color: $red; //changed from $yellow
+}
+
+.resume .func .skills-prog ul li:hover .skills-bar .bar {
+  background: $red; //changed from $yellow
+  box-shadow: 0 0 0 1px $red; //changed from $yellow
+}
+
+.resume .func .skills-soft ul li:hover svg .cbar {
+  stroke: $red; //changed from $yellow
+  stroke-width: 4px;
+}
+
+.resume .func .interests-items div:hover span {
+  color: $red; //changed from $yellow
+  transition-duration: 0.3s;
+}
 
