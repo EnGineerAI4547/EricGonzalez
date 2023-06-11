@@ -113,4 +113,54 @@ h3 {
   color: #FF0000;
   transition-duration: 0.3s;
 }
+.resume {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+}
+
+.resume .base {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.resume .base .contact,
+.resume .base .follow {
+  width: 50%;
+}
+
+.resume .func {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .func .work,
+.resume .func .edu,
+.resume .func .skills-prog,
+.resume .func .skills-soft,
+.resume .func .interests-items {
+  width: 30%;
+}
+
+.resume .func .work ul,
+.resume .func .edu ul,
+.resume .func .skills-prog ul,
+.resume .func .skills-soft ul {
+  margin: 0;
+  padding: 0;
+}
+
+.resume .func .work ul li,
+.resume .func .edu ul li,
+.resume .func .skills-prog ul li,
+.resume .func .skills-soft ul li {
+  margin-bottom: 10px;
+}
+
+.resume .func .interests-items div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
 
