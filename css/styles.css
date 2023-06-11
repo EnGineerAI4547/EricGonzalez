@@ -38,4 +38,128 @@ a {
   padding: 10px;
 }
 
+@charset "UTF-8";
+* {
+  outline: none;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: $white;
+  cursor: default;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+  display: block;
+  transition-duration: 0.3s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h2 {
+}
+
+h3 {
+  color: $red; //changed from $orange
+  margin: 10px 0;
+  text-transform: lowercase;
+  font-size: 1.25em;
+}
+
+// other styling code here...
+
+.resume .base .contact div a:hover {
+  color: $red; //changed from $yellow
+}
+
+.resume .base .contact div a:hover span::after {
+  width: 100%;
+}
+
+.resume .base .contact div:hover i {
+  color: $red; //changed from $yellow
+}
+
+.resume .base .contact div i {
+  color: $red; //changed from $orange
+  // other styling code...
+}
+
+.resume .base .contact div span::after {
+  content: "";
+  position: absolute;
+  background: $red; //changed from $yellow
+  height: 1px;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  transition-duration: 0.3s;
+}
+
+.resume .base .follow .box a:hover i {
+  background: $red; //changed from $yellow
+  // other styling code...
+}
+
+.resume .func .work ul li:hover::before,
+.resume .func .edu ul li:hover::before {
+  animation: circle 1.2s infinite;
+}
+
+.resume .func .work ul li:hover span,
+.resume .func .edu ul li:hover span {
+  color: $red; //changed from $yellow
+}
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px $red; //changed from $yellow
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+
+// other styling code here...
+
+.resume .func .skills-prog ul li:hover {
+  color: $red; //changed from $yellow
+}
+
+.resume .func .skills-prog ul li:hover .skills-bar .bar {
+  background: $red; //changed from $yellow
+  box-shadow: 0 0 0 1px $red; //changed from $yellow
+}
+
+.resume .func .skills-soft ul li:hover svg .cbar {
+  stroke: $red; //changed from $yellow
+  stroke-width: 4px;
+}
+
+.resume .func .interests-items div:hover span {
+  color: $red; //changed from $yellow
+  transition-duration: 0.3s;
+}
 
