@@ -1,4 +1,3 @@
-
 (function() {
   $(".skills-prog li")
     .find(".skills-bar")
